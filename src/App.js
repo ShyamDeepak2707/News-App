@@ -13,13 +13,13 @@ export default class App extends Component {
           <NavBar />
           <Routes>
             {/* <News country="in" category="science" /> */}
-            <Route path='/' element={<News key="general" country="in" category="general" />} />
-            <Route path='/entertainment' element={<News key="entertainment" country="in" category="entertainment" />} />
-            <Route path='/health' element={<News key="health" country="in" category="health" />} />
-            <Route path='/business' element={<News key="business" country="in" category="business" />} />
-            <Route path='/science' element={<News key="science" country="in" category="science" />} />
-            <Route path='/sports' element={<News key="sports" country="in" category="sports" />} />
-            <Route path='/technology' element={<News key="technology" country="in" category="technology" />} />
+            <Route path='News-App/' element={<News key="general" country="in" category="general" />} />
+            <Route path='News-App/entertainment' element={<News key="entertainment" country="in" category="entertainment" />} />
+            <Route path='News-App/health' element={<News key="health" country="in" category="health" />} />
+            <Route path='News-App/business' element={<News key="business" country="in" category="business" />} />
+            <Route path='News-App/science' element={<News key="science" country="in" category="science" />} />
+            <Route path='News-App/sports' element={<News key="sports" country="in" category="sports" />} />
+            <Route path='News-App/technology' element={<News key="technology" country="in" category="technology" />} />
           </Routes>
         </BrowserRouter>
       </div>
