@@ -70,7 +70,7 @@ export class News extends Component {
                 <h1 className='text-center'>OnlineTimes - Top Headlines</h1>
                 {this.state.loading && <Spinner />}
                 <div className="row my-5" style={{margin : "40px 0"}}>
-                    {!this.state.loading && this.state.articles.forEach((element) => {
+                    {!this.state.loading && this.state.articles.map((element) => {
                         return (
                             <div className="col-md-4" key={element.url}>
                                 <NewsItem title={element.title ? element.title.length > 40 ? `${element.title.slice(0, 40)}...` : `${element.title}` : ""} description={element.description ? element.description.length > 90 ? `${element.description.slice(0, 90)}...` : `${element.description}` : ""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author == null ? "Unknown" : element.author} date={element.publishedAt} source={element.source.name} />
